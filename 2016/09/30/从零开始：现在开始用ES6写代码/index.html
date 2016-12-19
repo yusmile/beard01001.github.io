@@ -1,0 +1,712 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.useso.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="JS,JavaScript,ES6,ECMAScript6,ES2015,Babel,Gulp,NodeJs," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="ES6&amp;#xFF08;ECMAScript6.0&amp;#xFF09;&amp;#x65E9;&amp;#x5728;2015&amp;#x5E74;&amp;#x4FBF;&amp;#x53D1;&amp;#x5E03;&amp;#x4E86;&amp;#x7B2C;&amp;#x4E00;&amp;#x4E2A;&amp;#x7248;&amp;#x672C;&amp;#xFF0C;&amp;#x6240;&amp;#x4EE5;&amp;#x53C8;&amp;#x88AB;&amp;#x79F0;&amp;#x4F5C;ECMAScript20">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从零开始：现在开始用ES6写代码">
+<meta property="og:url" content="http://blog.tail.cc/2016/09/30/从零开始：现在开始用ES6写代码/index.html">
+<meta property="og:site_name" content="Dino's blog">
+<meta property="og:description" content="ES6&amp;#xFF08;ECMAScript6.0&amp;#xFF09;&amp;#x65E9;&amp;#x5728;2015&amp;#x5E74;&amp;#x4FBF;&amp;#x53D1;&amp;#x5E03;&amp;#x4E86;&amp;#x7B2C;&amp;#x4E00;&amp;#x4E2A;&amp;#x7248;&amp;#x672C;&amp;#xFF0C;&amp;#x6240;&amp;#x4EE5;&amp;#x53C8;&amp;#x88AB;&amp;#x79F0;&amp;#x4F5C;ECMAScript20">
+<meta property="og:image" content="http://blog.tail.cc/2016/09/30/从零开始：现在开始用ES6写代码/nodejs-installation.jpg">
+<meta property="og:image" content="http://blog.tail.cc/2016/09/30/从零开始：现在开始用ES6写代码/nodejs-installed.jpg">
+<meta property="og:image" content="http://blog.tail.cc/2016/09/30/从零开始：现在开始用ES6写代码/npm-initialization.jpg">
+<meta property="og:image" content="http://blog.tail.cc/2016/09/30/从零开始：现在开始用ES6写代码/install-gulp.jpg">
+<meta property="og:image" content="http://blog.tail.cc/2016/09/30/从零开始：现在开始用ES6写代码/configure-gulp.jpg">
+<meta property="og:updated_time" content="2016-12-19T07:40:28.443Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="从零开始：现在开始用ES6写代码">
+<meta name="twitter:description" content="ES6&amp;#xFF08;ECMAScript6.0&amp;#xFF09;&amp;#x65E9;&amp;#x5728;2015&amp;#x5E74;&amp;#x4FBF;&amp;#x53D1;&amp;#x5E03;&amp;#x4E86;&amp;#x7B2C;&amp;#x4E00;&amp;#x4E2A;&amp;#x7248;&amp;#x672C;&amp;#xFF0C;&amp;#x6240;&amp;#x4EE5;&amp;#x53C8;&amp;#x88AB;&amp;#x79F0;&amp;#x4F5C;ECMAScript20">
+<meta name="twitter:image" content="http://blog.tail.cc/2016/09/30/从零开始：现在开始用ES6写代码/nodejs-installation.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://blog.tail.cc/2016/09/30/从零开始：现在开始用ES6写代码/"/>
+
+  <title> 从零开始：现在开始用ES6写代码 | Dino's blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Dino's blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">SIMPLE BUT NOT SIMPLE.</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            博文归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签云
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                从零开始：现在开始用ES6写代码
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-30T18:46:45+08:00" content="2016-09-30">
+              2016-09-30
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><code>ES6</code>&#xFF08;<code>ECMAScript6.0</code>&#xFF09;&#x65E9;&#x5728;2015&#x5E74;&#x4FBF;&#x53D1;&#x5E03;&#x4E86;&#x7B2C;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x6240;&#x4EE5;&#x53C8;&#x88AB;&#x79F0;&#x4F5C;<code>ECMAScript2015</code>&#x3002;</p>
+<p>&#x4F5C;&#x4E3A;&#x5DF2;&#x7ECF;&#x6B63;&#x5F0F;&#x53D1;&#x5E03;&#x7684;&#x65B0;&#x7248;&#x672C;&#xFF0C;&#x53D6;&#x4EE3;ES5&#x662F;&#x6BCB;&#x5EB8;&#x7F6E;&#x7591;&#x7684;&#x8D8B;&#x52BF;&#xFF0C;&#x4F46;&#x9274;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5386;&#x53F2;&#x9057;&#x7559;&#x95EE;&#x9898;&#xFF0C;&#x5728;&#x751F;&#x4EA7;&#x7EBF;&#x4E0A;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;&#x6765;&#x8F6C;&#x6362;&#x6210;<code>ES5</code>&#x4F7F;&#x5176;&#x517C;&#x5BB9;&#x65E7;&#x7248;&#x672C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x3002;<br><a id="more"></a><br>&#x4E0B;&#x9762;&#x6765;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x4F7F;&#x7528;<code>Gulp</code>+<code>Babel</code>&#x8FDB;&#x884C;<code>ES6</code>&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x7684;&#x90E8;&#x7F72;&#xFF1A;</p>
+<p>&#xFF08;&#x64CD;&#x4F5C;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5199;&#x7684;&#x6BD4;&#x8F83;&#x8BE6;&#x7EC6;&#x6240;&#x4EE5;&#x5B57;&#x6570;&#x6BD4;&#x8F83;&#x591A;&#xFF0C;&#x522B;&#x88AB;&#x5413;&#x9000;&#x4E86;&#x54C8;&#xFF0C;&#x800C;&#x4E14;&#x5927;&#x90E8;&#x5206;&#x914D;&#x7F6E;&#x90FD;&#x662F;&#x4E00;&#x52B3;&#x6C38;&#x9038;&#xFF0C;&#x591A;&#x4E2A;&#x9879;&#x76EE;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x7528;&#xFF0C;&#x54C8;&#x54C8;&#xFF09;</p>
+<ol>
+<li><h3 id="&#x5B89;&#x88C5;-NodeJS"><a href="#&#x5B89;&#x88C5;-NodeJS" class="headerlink" title="&#x5B89;&#x88C5; NodeJS"></a>&#x5B89;&#x88C5; NodeJS</h3><p> &#x65E2;&#x7136;&#x4F7F;&#x7528;<code>Gulp</code>&#x8DDF;<code>Babel</code>&#x80AF;&#x5B9A;&#x5C11;&#x4E0D;&#x4E86;<code>NodeJS</code>&#xFF0C;<code>NodeJS</code>&#x5404;&#x4E2A;&#x5E73;&#x53F0;&#x5747;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x5305;&#xFF0C;&#x7B80;&#x5355;&#x65B9;&#x4FBF;&#x53C8;&#x7701;&#x5FC3;&#xFF01;<br> <img src="/2016/09/30/&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#xFF1A;&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x7528;ES6&#x5199;&#x4EE3;&#x7801;/nodejs-installation.jpg" alt="&#x5B89;&#x88C5;NodeJs"><br> &#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#x6253;&#x5F00;&#x547D;&#x4EE4;&#x884C;&#xFF0C;&#x5206;&#x522B;&#x8F93;&#x5165;</p>
+ <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm -v</span><br><span class="line"></span><br><span class="line">$ <span class="keyword">node</span> <span class="title">-v</span></span><br></pre></td></tr></table></figure>
+<p> &#x51FA;&#x73B0;&#x5982;&#x4E0B;&#x8F93;&#x51FA;&#x5C31;&#x4EE3;&#x8868;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x4E86;&#xFF08;&#x8FD9;&#x91CC;&#x6211;&#x7528;&#x7684;&#x662F;<code>Git Bash</code>&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#xFF0C;&#x5B89;&#x88C5;<code>Git</code>&#x81EA;&#x5E26;&#xFF09;<br> <img src="/2016/09/30/&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#xFF1A;&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x7528;ES6&#x5199;&#x4EE3;&#x7801;/nodejs-installed.jpg" alt="NodeJS&#x5B89;&#x88C5;&#x6210;&#x529F;"></p>
+</li>
+<li><h3 id="&#x521D;&#x59CB;&#x5316;NPM&#x914D;&#x7F6E;"><a href="#&#x521D;&#x59CB;&#x5316;NPM&#x914D;&#x7F6E;" class="headerlink" title="&#x521D;&#x59CB;&#x5316;NPM&#x914D;&#x7F6E;"></a>&#x521D;&#x59CB;&#x5316;NPM&#x914D;&#x7F6E;</h3><p> &#x5728;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x5939;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x6267;&#x884C;</p>
+ <figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">npm</span> init</span><br></pre></td></tr></table></figure>
+<p> <img src="/2016/09/30/&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#xFF1A;&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x7528;ES6&#x5199;&#x4EE3;&#x7801;/npm-initialization.jpg" alt="&#x521D;&#x59CB;&#x5316;NPM"><br> &#x6309;&#x7167;&#x63D0;&#x793A;&#x586B;&#x597D;&#xFF0C;&#x9664;&#x4E86;<code>name</code>&#x548C;<code>version</code>&#x5B57;&#x6BB5;&#x5176;&#x4ED6;&#x90FD;&#x662F;&#x9009;&#x586B;&#x9879;&#xFF0C;&#x4E00;&#x8DEF;&#x56DE;&#x8F66;&#x5C31;OK&#x4E86;<br> &#x6700;&#x540E;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4F1A;&#x51FA;&#x73B0;&#x4E00;&#x4E2A;<code>package.json</code>&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0D;&#x4F1A;&#x624B;&#x52A8;&#x53BB;&#x4FEE;&#x6539;&#xFF0C;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x65F6;<code>NodeJS</code>&#x4F1A;&#x81EA;&#x52A8;&#x8BFB;&#x5199;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;</p>
+<blockquote>
+<p>&#x56FD;&#x5185;&#x7531;&#x4E8E;&#x4F17;&#x6240;&#x5468;&#x77E5;&#x7684;&#x539F;&#x56E0;NPM&#x5B89;&#x88C5;&#x6E90;&#x8BBF;&#x95EE;&#x7684;&#x901F;&#x5EA6;&#x5341;&#x5206;&#x7F13;&#x6162;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x66F4;&#x6539;&#x4E3A;&#x67D0;&#x5B9D;&#x7684;NPM&#x955C;&#x50CF;&#xFF1A;<br><code>$ npm config set registry https://registry.npm.taobao.org/</code></p>
+</blockquote>
+</li>
+<li><h3 id="&#x5B89;&#x88C5;-Gulp"><a href="#&#x5B89;&#x88C5;-Gulp" class="headerlink" title="&#x5B89;&#x88C5; Gulp"></a>&#x5B89;&#x88C5; Gulp</h3><ol>
+<li><h4 id="&#x9996;&#x5148;-&#x5168;&#x5C40;-&#x5B89;&#x88C5;Gulp"><a href="#&#x9996;&#x5148;-&#x5168;&#x5C40;-&#x5B89;&#x88C5;Gulp" class="headerlink" title="&#x9996;&#x5148; &#x5168;&#x5C40; &#x5B89;&#x88C5;Gulp"></a>&#x9996;&#x5148; <strong>&#x5168;&#x5C40;</strong> &#x5B89;&#x88C5;<code>Gulp</code></h4> <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> -g gulp</span><br></pre></td></tr></table></figure>
+<p> &#x5B89;&#x88C5;&#x8FC7;&#x7A0B;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x4E00;&#x4E9B;&#x8B66;&#x544A;&#xFF0C;&#x4E0D;&#x7528;&#x7406;&#x4ED6;&#xFF0C;&#x6700;&#x540E;&#x6267;&#x884C;</p>
+ <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>gulp -v</span><br></pre></td></tr></table></figure>
+<p> <img src="/2016/09/30/&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#xFF1A;&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x7528;ES6&#x5199;&#x4EE3;&#x7801;/install-gulp.jpg" alt="&#x5B89;&#x88C5;Gulp"><br> &#x53EA;&#x8981;&#x6B63;&#x786E;&#x8F93;&#x51FA;&#x4E86;&#x7248;&#x672C;&#x53F7;&#x5C31;OK&#x4E86;&#x3002;</p>
+</li>
+<li><h4 id="&#x7136;&#x540E;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x5B89;&#x88C5;-&#x5F00;&#x53D1;&#x4F9D;&#x8D56;&#xFF1A;"><a href="#&#x7136;&#x540E;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x5B89;&#x88C5;-&#x5F00;&#x53D1;&#x4F9D;&#x8D56;&#xFF1A;" class="headerlink" title="&#x7136;&#x540E;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x5B89;&#x88C5; &#x5F00;&#x53D1;&#x4F9D;&#x8D56;&#xFF1A;"></a>&#x7136;&#x540E;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x5B89;&#x88C5; <strong>&#x5F00;&#x53D1;&#x4F9D;&#x8D56;</strong>&#xFF1A;</h4> <figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --<span class="built_in">save</span>-<span class="built_in">dev</span> gulp</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>&#x8BB8;&#x591A;&#x5C0F;&#x4F19;&#x4F34;&#x4F1A;&#x7591;&#x60D1;&#x8FD9;&#x4E24;&#x79CD;&#x5B89;&#x88C5;&#x65B9;&#x6CD5;&#x6709;&#x4EC0;&#x4E48;&#x5DEE;&#x522B;&#xFF0C;&#x5176;&#x5B9E;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x7684;&#x4E00;&#x822C;&#x662F;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x6BD4;&#x5982;&#x8FD9;&#x91CC;&#x7684;gulp&#xFF1A;<br><code>$ gulp taskName</code><br>&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x4E4B;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x4F7F;&#x7528;&#x8FD9;&#x6837;&#x7684;&#x547D;&#x4EE4;&#x6765;&#x6267;&#x884C;<code>Gulp</code>&#x4EFB;&#x52A1;&#x3002;<br>&#x800C;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x5B89;&#x88C5;&#x7684;&#x5F00;&#x53D1;&#x4F9D;&#x8D56;&#x5219;&#x662F;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E2D;&#x7684; <code>node_modules</code> &#x76EE;&#x5F55;&#x4E2D;&#x653E;&#x5165;&#x6A21;&#x5757;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x901A;&#x8FC7;<code>require()</code>&#x6765;&#x5F15;&#x5165;&#x7684;&#x6A21;&#x5757;&#x3002;</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><h3 id="&#x5B89;&#x88C5;-Gulp-amp-Babel-&#x76F8;&#x5173;&#x63D2;&#x4EF6;"><a href="#&#x5B89;&#x88C5;-Gulp-amp-Babel-&#x76F8;&#x5173;&#x63D2;&#x4EF6;" class="headerlink" title="&#x5B89;&#x88C5; Gulp &amp; Babel &#x76F8;&#x5173;&#x63D2;&#x4EF6;"></a>&#x5B89;&#x88C5; Gulp &amp; Babel &#x76F8;&#x5173;&#x63D2;&#x4EF6;</h3><ol>
+<li><h4 id="&#x9996;&#x5148;&#x5B89;&#x88C5;-gulp-babel-&#xFF1A;"><a href="#&#x9996;&#x5148;&#x5B89;&#x88C5;-gulp-babel-&#xFF1A;" class="headerlink" title="&#x9996;&#x5148;&#x5B89;&#x88C5; gulp-babel &#xFF1A;"></a>&#x9996;&#x5148;&#x5B89;&#x88C5; <code>gulp-babel</code> &#xFF1A;</h4> <figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --<span class="built_in">save</span>-<span class="built_in">dev</span> gulp-babel</span><br></pre></td></tr></table></figure>
+</li>
+<li><h4 id="&#x5B89;&#x88C5;&#x8F6C;&#x7801;&#x5305;&#xFF1A;"><a href="#&#x5B89;&#x88C5;&#x8F6C;&#x7801;&#x5305;&#xFF1A;" class="headerlink" title="&#x5B89;&#x88C5;&#x8F6C;&#x7801;&#x5305;&#xFF1A;"></a>&#x5B89;&#x88C5;&#x8F6C;&#x7801;&#x5305;&#xFF1A;</h4> <figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --<span class="built_in">save</span>-<span class="built_in">dev</span> babel-preset-latest</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>&#x6211;&#x8FD9;&#x91CC;&#x5B89;&#x88C5;&#x4E86;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;&#x8F6C;&#x7801;&#x5305;&#xFF0C;&#x8FD9;&#x4E2A;&#x8F6C;&#x7801;&#x5305;&#x652F;&#x6301;<code>ES2017&#xFF08;Stage3&#xFF09;&amp;ES2016&amp;ES2015</code>&#x8BED;&#x6CD5;&#x7684;&#x8F6C;&#x6362;&#x3002;<br>&#x5982;&#x679C;&#x4F60;&#x53EA;&#x60F3;&#x4F7F;&#x7528;&#x6B63;&#x5F0F;&#x63A8;&#x51FA;&#x7684;<code>ES6&#xFF08;ES2015&#xFF09;</code>&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4EC5;&#x5B89;&#x88C5;<code>ES6</code>&#x7684;&#x8F6C;&#x7801;&#x5305;&#xFF1A;<br><code>$ npm install --save-dev babel-preset-es2015</code></p>
+</blockquote>
+<p> Babel&#x8F6C;&#x7801;&#x914D;&#x7F6E;&#xFF1A;</p>
+ <figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> &apos;{ <span class="string">&quot;presets&quot;</span>: [<span class="string">&quot;latest&quot;</span>] }&apos; &gt; .babelrc</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x521B;&#x5EFA; <code>.babelrc</code> &#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#xFF1B;<br>&#x4EC5;&#x8F6C;&#x6362;<code>ES6</code>&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x5C06;&#x547D;&#x4EE4;&#x4E2D;&#x7684; <code>latest</code> &#x6362;&#x6210; <code>es2015</code> &#x5C31;OK&#x4E86;&#x3002;</p>
+</blockquote>
+</li>
+<li><h4 id="&#x5B89;&#x88C5;-gulp-watch&#xFF1A;"><a href="#&#x5B89;&#x88C5;-gulp-watch&#xFF1A;" class="headerlink" title="&#x5B89;&#x88C5; gulp-watch&#xFF1A;"></a>&#x5B89;&#x88C5; <code>gulp-watch</code>&#xFF1A;</h4> <figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --<span class="built_in">save</span>-<span class="built_in">dev</span> gulp-watch</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>gulp-watch</code> &#x7528;&#x4E8E;&#x5B9E;&#x65F6;&#x76D1;&#x63A7;&#x6587;&#x4EF6;&#x53D8;&#x5316;&#x5B9E;&#x65F6;&#x7F16;&#x8BD1;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4E0D;&#x7528;&#x6BCF;&#x6B21;&#x5199;&#x5B8C;&#x4EE3;&#x7801;&#x518D;&#x53BB;&#x624B;&#x52A8;&#x8FD0;&#x884C;<code>gulp</code>&#x4EFB;&#x52A1;&#x7F16;&#x8BD1;&#x6587;&#x4EF6;&#x4E86;&#xFF0C;&#x4E5F;&#x662F;&#x61D2;&#x4EBA;&#x5FC5;&#x5907;&#xFF01;</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><h3 id="&#x914D;&#x7F6E;-Gulp"><a href="#&#x914D;&#x7F6E;-Gulp" class="headerlink" title="&#x914D;&#x7F6E; Gulp"></a>&#x914D;&#x7F6E; Gulp</h3><p> &#x7EC8;&#x4E8E;&#x5230;&#x6700;&#x540E;&#x4E00;&#x6B65;&#x4E86;&#xFF0C;&#x54C8;&#x54C8;&#xFF0C;&#x5177;&#x4F53;&#x914D;&#x7F6E;&#x5982;&#x4E0B;&#x56FE;&#xFF0C;&#x5199;&#x4E86;&#x6BD4;&#x8F83;&#x8BE6;&#x7EC6;&#x7684;&#x6CE8;&#x91CA;&#x4E86;&#xFF1A;<br> <img src="/2016/09/30/&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#xFF1A;&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x7528;ES6&#x5199;&#x4EE3;&#x7801;/configure-gulp.jpg" alt="&#x914D;&#x7F6E;Gulp"><br> &#x4FDD;&#x5B58;&#x5230;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x7684; <code>gulpfile.js</code> &#x6587;&#x4EF6;&#x5C31;&#x597D;&#x4E86;&#x3002;<br> &#x6700;&#x540E;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x6267;&#x884C;&#xFF1A;</p>
+ <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>gulp</span><br></pre></td></tr></table></figure>
+<p> &#x5373;&#x53EF;&#x8FD0;&#x884C;&#x9ED8;&#x8BA4;&#x4EFB;&#x52A1;&#xFF08;&#x4EFB;&#x52A1;&#x540D;&#x4E3A; <code>default</code>&#xFF09;</p>
+</li>
+</ol>
+<p>&#x8D76;&#x5FEB;&#x5199;&#x4E2A;ES6&#x8BED;&#x6CD5;&#x8BD5;&#x8BD5;&#x5427;~&#x2196;(^&#x3C9;^)&#x2197;</p>
+<p>&#x521D;&#x5165;&#x524D;&#x7AEF;&#xFF0C;&#x7C97;&#x5199;&#x51E0;&#x5B57;&#xFF0C;&#x5982;&#x6709;&#x4E0D;&#x8DB3;&#xFF0C;&#x8FD8;&#x671B;&#x6307;&#x6B63;&#xFF0C;&#x8C22;&#x8C22;&#x3002;</p>
+<p>&#x5171;&#x52C9;&#x3002;</p>
+<p>-END</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JS/" rel="tag">#JS</a>
+          
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+          
+            <a href="/tags/ES6/" rel="tag">#ES6</a>
+          
+            <a href="/tags/ECMAScript6/" rel="tag">#ECMAScript6</a>
+          
+            <a href="/tags/ES2015/" rel="tag">#ES2015</a>
+          
+            <a href="/tags/Babel/" rel="tag">#Babel</a>
+          
+            <a href="/tags/Gulp/" rel="tag">#Gulp</a>
+          
+            <a href="/tags/NodeJs/" rel="tag">#NodeJs</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/12/JS简单小巧的时间日期格式转换函数/" rel="next" title="JS简单小巧的时间日期格式转换函数">
+                <i class="fa fa-chevron-left"></i> JS简单小巧的时间日期格式转换函数
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="Dino" />
+          <p class="site-author-name" itemprop="name">Dino</p>
+          <p class="site-description motion-element" itemprop="description">从来都不曾开始，永远也不会结束</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">标签云</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/HiDino9" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.instagram.com/HiDino9" target="_blank" title="Instagram">
+                  
+                    <i class="fa fa-fw fa-instagram"></i>
+                  
+                  Instagram
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/lookime" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/HiDino9" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-NodeJS"><span class="nav-number">1.</span> <span class="nav-text">安装 NodeJS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化NPM配置"><span class="nav-number">2.</span> <span class="nav-text">初始化NPM配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Gulp"><span class="nav-number">3.</span> <span class="nav-text">安装 Gulp</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先-全局-安装Gulp"><span class="nav-number">3.1.</span> <span class="nav-text">首先 全局 安装Gulp</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#然后在项目根目录安装-开发依赖："><span class="nav-number">3.2.</span> <span class="nav-text">然后在项目根目录安装 开发依赖：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Gulp-amp-Babel-相关插件"><span class="nav-number">4.</span> <span class="nav-text">安装 Gulp & Babel 相关插件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先安装-gulp-babel-："><span class="nav-number">4.1.</span> <span class="nav-text">首先安装 gulp-babel ：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装转码包："><span class="nav-number">4.2.</span> <span class="nav-text">安装转码包：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装-gulp-watch："><span class="nav-number">4.3.</span> <span class="nav-text">安装 gulp-watch：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置-Gulp"><span class="nav-number">5.</span> <span class="nav-text">配置 Gulp</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dino</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

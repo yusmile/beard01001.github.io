@@ -42,7 +42,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JS,JavaScript,Date,时间,日期,格式转换," />
 
 
 
@@ -58,16 +58,22 @@
 
 
 
-<meta name="description" content="&amp;#x7EC3;&amp;#x7EC3;&amp;#x624B;&amp;#xFF0C;&amp;#x771F;&amp;#x7684;&amp;#x4EC0;&amp;#x4E48;&amp;#x90FD;&amp;#x6CA1;&amp;#x6709;&amp;#x5199;(:&amp;#x437;&amp;#x309D;&amp;#x2220;)">
+<meta name="description" content="JS&amp;#x7B80;&amp;#x5355;&amp;#x5C0F;&amp;#x5DE7;&amp;#x7684;&amp;#x65F6;&amp;#x95F4;&amp;#x65E5;&amp;#x671F;&amp;#x683C;&amp;#x5F0F;&amp;#x8F6C;&amp;#x6362;&amp;#x51FD;&amp;#x6570;
+
+&amp;#x8FD9;&amp;#x662F;&amp;#x5B9E;&amp;#x73B0;&amp;#x540E;&amp;#x7684;&amp;#x4F7F;&amp;#x7528;&amp;#x65B9;&amp;#x6">
 <meta property="og:type" content="article">
-<meta property="og:title" content="好吧我很懒什么都没有弄_(:зゝ∠)_">
-<meta property="og:url" content="http://blog.tail.cc/2016/07/07/好吧我很懒什么都没有弄-зゝ∠/index.html">
+<meta property="og:title" content="JS简单小巧的时间日期格式转换函数">
+<meta property="og:url" content="http://blog.tail.cc/JS简单小巧的时间日期格式转换函数/index.html">
 <meta property="og:site_name" content="熊的博客">
-<meta property="og:description" content="&amp;#x7EC3;&amp;#x7EC3;&amp;#x624B;&amp;#xFF0C;&amp;#x771F;&amp;#x7684;&amp;#x4EC0;&amp;#x4E48;&amp;#x90FD;&amp;#x6CA1;&amp;#x6709;&amp;#x5199;(:&amp;#x437;&amp;#x309D;&amp;#x2220;)">
-<meta property="og:updated_time" content="2016-07-07T06:29:27.950Z">
+<meta property="og:description" content="JS&amp;#x7B80;&amp;#x5355;&amp;#x5C0F;&amp;#x5DE7;&amp;#x7684;&amp;#x65F6;&amp;#x95F4;&amp;#x65E5;&amp;#x671F;&amp;#x683C;&amp;#x5F0F;&amp;#x8F6C;&amp;#x6362;&amp;#x51FD;&amp;#x6570;
+
+&amp;#x8FD9;&amp;#x662F;&amp;#x5B9E;&amp;#x73B0;&amp;#x540E;&amp;#x7684;&amp;#x4F7F;&amp;#x7528;&amp;#x65B9;&amp;#x6">
+<meta property="og:updated_time" content="2016-12-19T08:04:32.031Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="好吧我很懒什么都没有弄_(:зゝ∠)_">
-<meta name="twitter:description" content="&amp;#x7EC3;&amp;#x7EC3;&amp;#x624B;&amp;#xFF0C;&amp;#x771F;&amp;#x7684;&amp;#x4EC0;&amp;#x4E48;&amp;#x90FD;&amp;#x6CA1;&amp;#x6709;&amp;#x5199;(:&amp;#x437;&amp;#x309D;&amp;#x2220;)">
+<meta name="twitter:title" content="JS简单小巧的时间日期格式转换函数">
+<meta name="twitter:description" content="JS&amp;#x7B80;&amp;#x5355;&amp;#x5C0F;&amp;#x5DE7;&amp;#x7684;&amp;#x65F6;&amp;#x95F4;&amp;#x65E5;&amp;#x671F;&amp;#x683C;&amp;#x5F0F;&amp;#x8F6C;&amp;#x6362;&amp;#x51FD;&amp;#x6570;
+
+&amp;#x8FD9;&amp;#x662F;&amp;#x5B9E;&amp;#x73B0;&amp;#x540E;&amp;#x7684;&amp;#x4F7F;&amp;#x7528;&amp;#x65B9;&amp;#x6">
 
 
 
@@ -88,9 +94,9 @@
 
 
 
-  <link rel="canonical" href="http://blog.tail.cc/2016/07/07/好吧我很懒什么都没有弄-зゝ∠/"/>
+  <link rel="canonical" href="http://blog.tail.cc/JS简单小巧的时间日期格式转换函数/"/>
 
-  <title> 好吧我很懒什么都没有弄_(:зゝ∠)_ | 熊的博客 </title>
+  <title> JS简单小巧的时间日期格式转换函数 | 熊的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -249,7 +255,7 @@
             
             
               
-                好吧我很懒什么都没有弄_(:зゝ∠)_
+                JS简单小巧的时间日期格式转换函数
               
             
           </h1>
@@ -261,19 +267,38 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-07T14:11:21+08:00" content="2016-07-07">
-              2016-07-07
+            <time itemprop="dateCreated" datetime="2016-09-12T14:53:06+08:00" content="2016-09-12">
+              2016-09-12
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/07/07/好吧我很懒什么都没有弄-зゝ∠/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/07/好吧我很懒什么都没有弄-зゝ∠/" itemprop="commentsCount"></span>
+                <a href="/JS简单小巧的时间日期格式转换函数/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="JS简单小巧的时间日期格式转换函数/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -296,7 +321,16 @@
       
 
       
-        <h2 id="&#x7EC3;&#x7EC3;&#x624B;&#xFF0C;&#x771F;&#x7684;&#x4EC0;&#x4E48;&#x90FD;&#x6CA1;&#x6709;&#x5199;-&#x437;&#x309D;&#x2220;"><a href="#&#x7EC3;&#x7EC3;&#x624B;&#xFF0C;&#x771F;&#x7684;&#x4EC0;&#x4E48;&#x90FD;&#x6CA1;&#x6709;&#x5199;-&#x437;&#x309D;&#x2220;" class="headerlink" title="&#x7EC3;&#x7EC3;&#x624B;&#xFF0C;&#x771F;&#x7684;&#x4EC0;&#x4E48;&#x90FD;&#x6CA1;&#x6709;&#x5199;(:&#x437;&#x309D;&#x2220;)"></a>&#x7EC3;&#x7EC3;&#x624B;&#xFF0C;&#x771F;&#x7684;&#x4EC0;&#x4E48;&#x90FD;&#x6CA1;&#x6709;&#x5199;<em>(:&#x437;&#x309D;&#x2220;)</em></h2>
+        <p><strong>JS&#x7B80;&#x5355;&#x5C0F;&#x5DE7;&#x7684;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#x683C;&#x5F0F;&#x8F6C;&#x6362;&#x51FD;&#x6570;</strong></p>
+<ol>
+<li><h3 id="&#x8FD9;&#x662F;&#x5B9E;&#x73B0;&#x540E;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;"><a href="#&#x8FD9;&#x662F;&#x5B9E;&#x73B0;&#x540E;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;" class="headerlink" title="&#x8FD9;&#x662F;&#x5B9E;&#x73B0;&#x540E;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;"></a>&#x8FD9;&#x662F;&#x5B9E;&#x73B0;&#x540E;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</h3> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> now = <span class="keyword">new</span> <span class="built_in">Date</span>(); </span><br><span class="line"><span class="keyword">var</span> nowStr = now.format(<span class="string">&apos;yyyy-MM-dd hh:mm:ss&apos;</span>); </span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> testDate = <span class="keyword">new</span> <span class="built_in">Date</span>(); </span><br><span class="line"><span class="keyword">var</span> testStr = testDate.format(<span class="string">&apos;YYYY&#x5E74;MM&#x6708;dd&#x65E5;hh&#x5C0F;&#x65F6;mm&#x5206;ss&#x79D2;&apos;</span>); </span><br><span class="line">alert(testStr); </span><br><span class="line"></span><br><span class="line">alert(<span class="keyword">new</span> <span class="built_in">Date</span>().format(<span class="string">&apos;yyyy&#x5E74;MM&#x6708;dd&#x65E5;&apos;</span>)); </span><br><span class="line">alert(<span class="keyword">new</span> <span class="built_in">Date</span>().format(<span class="string">&apos;MM/dd/yyyy&apos;</span>)); </span><br><span class="line">alert(<span class="keyword">new</span> <span class="built_in">Date</span>().format(<span class="string">&apos;yyyyMMdd&apos;</span>)); </span><br><span class="line">alert(<span class="keyword">new</span> <span class="built_in">Date</span>().format(<span class="string">&apos;yyyy-MM-dd hh:mm:ss&apos;</span>));</span><br></pre></td></tr></table></figure>
+ <a id="more"></a>
+</li>
+<li><h3 id="&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#xFF1A;&#x5728;Date&#x539F;&#x578B;&#x4E0A;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;"><a href="#&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#xFF1A;&#x5728;Date&#x539F;&#x578B;&#x4E0A;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;" class="headerlink" title="&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#xFF1A;&#x5728;Date&#x539F;&#x578B;&#x4E0A;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;"></a>&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#xFF1A;&#x5728;Date&#x539F;&#x578B;&#x4E0A;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;</h3> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Date</span>.prototype.format = <span class="function"><span class="keyword">function</span>(<span class="params">format</span>) </span>{ </span><br><span class="line">    <span class="keyword">var</span> o = {</span><br><span class="line">        <span class="string">&apos;M+&apos;</span>: <span class="keyword">this</span>.getMonth() + <span class="number">1</span>,                      <span class="comment">//month</span></span><br><span class="line">        <span class="string">&apos;d+&apos;</span>: <span class="keyword">this</span>.getDate(),                           <span class="comment">//day</span></span><br><span class="line">        <span class="string">&apos;h+&apos;</span>: <span class="keyword">this</span>.getHours(),                          <span class="comment">//hour</span></span><br><span class="line">        <span class="string">&apos;m+&apos;</span>: <span class="keyword">this</span>.getMinutes(),                        <span class="comment">//minute</span></span><br><span class="line">        <span class="string">&apos;s+&apos;</span>: <span class="keyword">this</span>.getSeconds(),                        <span class="comment">//second</span></span><br><span class="line">        <span class="string">&apos;q+&apos;</span>: <span class="built_in">Math</span>.floor((<span class="keyword">this</span>.getMonth() + <span class="number">3</span>) / <span class="number">3</span>),    <span class="comment">//quarter</span></span><br><span class="line">        <span class="string">&apos;S&apos;</span>: <span class="keyword">this</span>.getMilliseconds()                     <span class="comment">//millisecond</span></span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (<span class="regexp">/(y+)/</span>.test(format)) {</span><br><span class="line">        format = format.replace(</span><br><span class="line">            <span class="built_in">RegExp</span>.$<span class="number">1</span>,</span><br><span class="line">            (<span class="keyword">this</span>.getFullYear() + <span class="string">&apos;&apos;</span>).substr(<span class="number">4</span> - <span class="built_in">RegExp</span>.$<span class="number">1.</span>length)</span><br><span class="line">        );</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> k <span class="keyword">in</span> o) {</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">&apos;(&apos;</span> + k + <span class="string">&apos;)&apos;</span>).test(format)) {</span><br><span class="line">            format = format.replace(</span><br><span class="line">                <span class="built_in">RegExp</span>.$<span class="number">1</span>,</span><br><span class="line">                <span class="built_in">RegExp</span>.$<span class="number">1.</span>length == <span class="number">1</span> ?</span><br><span class="line">                    o[k]: (<span class="string">&apos;00&apos;</span> + o[k]).substr((<span class="string">&apos;&apos;</span> + o[k]).length)</span><br><span class="line">            );</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> format;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><em>(&#x6458;&#x81EA;&#x7F51;&#x7EDC;&#xFF0C;&#x4F5C;&#x8005;&#x4E0D;&#x8BE6;)</em></p>
+
       
     </div>
 
@@ -316,17 +350,37 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/JS/" rel="tag">#JS</a>
+          
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+          
+            <a href="/tags/Date/" rel="tag">#Date</a>
+          
+            <a href="/tags/时间/" rel="tag">#时间</a>
+          
+            <a href="/tags/日期/" rel="tag">#日期</a>
+          
+            <a href="/tags/格式转换/" rel="tag">#格式转换</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/细数JavaScript中那些少为人知的技巧/" rel="next" title="细数JavaScript中那些神乎其神的技巧">
+                <i class="fa fa-chevron-left"></i> 细数JavaScript中那些神乎其神的技巧
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/15/细数JavaScript中那些少为人知的技巧/" rel="prev" title="细数JavaScript中那些神乎其神的技巧">
-                细数JavaScript中那些神乎其神的技巧 <i class="fa fa-chevron-right"></i>
+              <a href="/从零开始：现在开始用ES6写代码/" rel="prev" title="从零开始：现在开始用ES6写代码">
+                从零开始：现在开始用ES6写代码 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -376,8 +430,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/07/07/好吧我很懒什么都没有弄-зゝ∠/"
-           data-title="好吧我很懒什么都没有弄_(:зゝ∠)_" data-url="http://blog.tail.cc/2016/07/07/好吧我很懒什么都没有弄-зゝ∠/">
+      <div class="ds-thread" data-thread-key="JS简单小巧的时间日期格式转换函数/"
+           data-title="JS简单小巧的时间日期格式转换函数" data-url="http://blog.tail.cc/JS简单小巧的时间日期格式转换函数/">
       </div>
     
   </div>
@@ -506,7 +560,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#练练手，真的什么都没有写-зゝ∠"><span class="nav-number">1.</span> <span class="nav-text">练练手，真的什么都没有写(:зゝ∠)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#这是实现后的使用方法"><span class="nav-number">1.</span> <span class="nav-text">这是实现后的使用方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现方法：在Date原型上添加方法"><span class="nav-number">2.</span> <span class="nav-text">实现方法：在Date原型上添加方法</span></a></li></ol></div>
             
           </div>
         </section>

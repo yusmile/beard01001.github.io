@@ -87,7 +87,7 @@
     motion: true,
     duoshuo: {
       userId: 7566230,
-      author: '博主'
+      author: 'Author'
     }
   };
 </script>
@@ -100,7 +100,7 @@
   <title> 从零开始：现在开始用ES6写代码 | 熊的博客 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
 
@@ -126,17 +126,19 @@
 
   <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
+    
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader" style="background-image: url('/images/home_bg.jpg');">
+      <div class="header-inner"><a class="site-home" href="/">熊的博客</a>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
+<div class="site-meta ">
   
 
   <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
+    <div href="/"  class="brand">
       <span class="logo-line-before"><i></i></span>
       <span class="site-title">熊的博客</span>
       <span class="logo-line-after"><i></i></span>
-    </a>
+    </div>
   </div>
   <p class="site-subtitle">SIMPLE BUT NOT SIMPLE.</p>
 </div>
@@ -156,12 +158,12 @@
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            首页
+            Categories
           </a>
         </li>
       
@@ -171,7 +173,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            博文归档
+            Archives
           </a>
         </li>
       
@@ -181,17 +183,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签云
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
+            Tags
           </a>
         </li>
       
@@ -204,7 +196,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            搜索
+            Search
           </a>
         </li>
       
@@ -227,7 +219,37 @@
 </nav>
 
  </div>
+      <div class="header-post"> 
+  <div class="post-header">
+      <div class="tags">
+      
+        <a href="/tags/JS/" rel="tag" title="JS">JS</a>
+      
+        <a href="/tags/JavaScript/" rel="tag" title="JavaScript">JavaScript</a>
+      
+        <a href="/tags/ES6/" rel="tag" title="ES6">ES6</a>
+      
+        <a href="/tags/ECMAScript6/" rel="tag" title="ECMAScript6">ECMAScript6</a>
+      
+        <a href="/tags/ES2015/" rel="tag" title="ES2015">ES2015</a>
+      
+        <a href="/tags/Babel/" rel="tag" title="Babel">Babel</a>
+      
+        <a href="/tags/Gulp/" rel="tag" title="Gulp">Gulp</a>
+      
+        <a href="/tags/NodeJs/" rel="tag" title="NodeJs">NodeJs</a>
+      
+      </div>
+      <h1>从零开始：现在开始用ES6写代码</h1>
+      <h2 class="subtitle"></h2>
+      <span class="post-meta-item-text">Posted on </span>
+      <time itemprop="dateCreated" datetime="2016-09-30T18:46:45+08:00" content="September 30th 2016" title="2016-09-30 18:46:45">
+        September 30th 2016
+      </time>
+  </div>
+ </div>
     </header>
+
 
     <main id="main" class="main">
       <div class="main-inner">
@@ -267,9 +289,9 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-30T18:46:45+08:00" content="2016-09-30">
-              2016-09-30
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-09-30T18:46:45+08:00" content="September 30th 2016">
+              September 30th 2016
             </time>
           </span>
 
@@ -279,7 +301,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/JavaScript/" itemprop="url" rel="index">
@@ -294,7 +316,7 @@
             </span>
           
 
-          
+          <!-- 
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
@@ -303,7 +325,7 @@
                 </a>
               </span>
             
-          
+           -->
 
           
 
@@ -511,10 +533,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
+            Overview
           </li>
         </ul>
       
@@ -531,7 +553,7 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">6</span>
-              <span class="site-state-item-name">日志</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -539,7 +561,7 @@
             <div class="site-state-item site-state-categories">
               <a href="/categories">
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">分类</span>
+                <span class="site-state-item-name">categories</span>
               </a>
             </div>
           
@@ -548,7 +570,7 @@
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">20</span>
-                <span class="site-state-item-name">标签云</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -641,11 +663,11 @@
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主题 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Pisces
   </a>

@@ -80,7 +80,7 @@
     motion: true,
     duoshuo: {
       userId: 7566230,
-      author: '博主'
+      author: 'Author'
     }
   };
 </script>
@@ -94,12 +94,12 @@
   
 
   
-    标签云 | 熊的博客
+    Tag | 熊的博客
   
 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
 
@@ -125,17 +125,19 @@
 
   <div class="container one-collumn sidebar-position-right  ">
     <div class="headband"></div>
+    
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader" style="background-image: url('/images/home_bg.jpg');">
+      <div class="header-inner"><a class="site-home" href="/">熊的博客</a>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
+<div class="site-meta ">
   
 
   <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
+    <div href="/"  class="brand">
       <span class="logo-line-before"><i></i></span>
       <span class="site-title">熊的博客</span>
       <span class="logo-line-after"><i></i></span>
-    </a>
+    </div>
   </div>
   <p class="site-subtitle">SIMPLE BUT NOT SIMPLE.</p>
 </div>
@@ -155,12 +157,12 @@
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            首页
+            Categories
           </a>
         </li>
       
@@ -170,7 +172,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            博文归档
+            Archives
           </a>
         </li>
       
@@ -180,17 +182,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签云
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
+            Tags
           </a>
         </li>
       
@@ -203,7 +195,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            搜索
+            Search
           </a>
         </li>
       
@@ -228,6 +220,7 @@
  </div>
     </header>
 
+
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
@@ -239,7 +232,7 @@
     
       <div class="tag-cloud">
         <div class="tag-cloud-title">
-            目前共计 20 个标签云
+            20 tags in total
         </div>
         <div class="tag-cloud-tags">
           <a href="/tags/Apache/" style="font-size: 12px; color: #ccc">Apache</a> <a href="/tags/Babel/" style="font-size: 12px; color: #ccc">Babel</a> <a href="/tags/Date/" style="font-size: 12px; color: #ccc">Date</a> <a href="/tags/ECMAScript6/" style="font-size: 12px; color: #ccc">ECMAScript6</a> <a href="/tags/ES2015/" style="font-size: 12px; color: #ccc">ES2015</a> <a href="/tags/ES6/" style="font-size: 12px; color: #ccc">ES6</a> <a href="/tags/Gulp/" style="font-size: 12px; color: #ccc">Gulp</a> <a href="/tags/JS/" style="font-size: 30px; color: #111">JS</a> <a href="/tags/JavaScript/" style="font-size: 30px; color: #111">JavaScript</a> <a href="/tags/NodeJs/" style="font-size: 12px; color: #ccc">NodeJs</a> <a href="/tags/Photoshop/" style="font-size: 12px; color: #ccc">Photoshop</a> <a href="/tags/Server/" style="font-size: 12px; color: #ccc">Server</a> <a href="/tags/XAMPP/" style="font-size: 12px; color: #ccc">XAMPP</a> <a href="/tags/切图/" style="font-size: 12px; color: #ccc">切图</a> <a href="/tags/技巧/" style="font-size: 12px; color: #ccc">技巧</a> <a href="/tags/日期/" style="font-size: 12px; color: #ccc">日期</a> <a href="/tags/时间/" style="font-size: 12px; color: #ccc">时间</a> <a href="/tags/本地服务器/" style="font-size: 12px; color: #ccc">本地服务器</a> <a href="/tags/格式转换/" style="font-size: 12px; color: #ccc">格式转换</a> <a href="/tags/虚拟主机/" style="font-size: 12px; color: #ccc">虚拟主机</a>
@@ -286,7 +279,7 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">6</span>
-              <span class="site-state-item-name">日志</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -294,7 +287,7 @@
             <div class="site-state-item site-state-categories">
               <a href="/categories">
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">分类</span>
+                <span class="site-state-item-name">categories</span>
               </a>
             </div>
           
@@ -303,7 +296,7 @@
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">20</span>
-                <span class="site-state-item-name">标签云</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -385,11 +378,11 @@
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主题 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Pisces
   </a>

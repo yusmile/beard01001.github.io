@@ -886,6 +886,12 @@ pre .javascript .function {
   margin: 5px 20px;
   border: none;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-home {
+    font-size: 50px;
+    line-height: 110px;
+  }
+}
 .site-home:after {
   content: '';
   display: block;
@@ -967,11 +973,25 @@ pre .javascript .function {
   -o-transform: scaleX(1);
   transform: scaleX(1);
 }
+@media (max-width: 767px) {
+  .site-title {
+    font-size: 60px;
+  }
+  .site-title:before,
+  .site-title:after {
+    border-width: 3px;
+  }
+}
 .site-subtitle {
   margin-top: 10px;
   font-size: 18px;
   font-weight: 300;
   color: #fff;
+}
+@media (max-width: 767px) {
+  .site-subtitle {
+    font-size: 16px;
+  }
 }
 .use-motion .brand {
   opacity: 0;
@@ -1009,11 +1029,41 @@ pre .javascript .function {
   position: absolute;
   top: 0;
   right: 20px;
+/*   +mobile() {
+    top: 35px;
+    right: 16px;
+    position: fixed;
+    top: 0;
+    right: -25%;
+    bottom: 0;
+    display: block; !important;
+    background-color: #212121;
+    z-index: 999;
+    padding: 0 10px;
+    transform-origin: right;
+    transform: scaleX(.8) translateX(-100%);
+  
+    &.show {
+      transform: scaleX(1.25) translateX(0);
+    }
+  
+    &:before {
+      content: '';
+      position: fixed;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      left: -999px;
+      background: black;
+      opacity: .6;
+    }
+  }
+   */
 }
 @media (max-width: 767px) {
   .site-nav {
-    top: 35px;
     right: 16px;
+    top: 40px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1675,7 +1725,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c8ffff;
+  background: #a39957;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2282,7 +2332,7 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
     width: auto;
-    min-height: 80px;
+    min-height: 130px;
   }
 }
 @media (max-width: 767px) {
@@ -2312,6 +2362,7 @@ body {
   .header-inner {
     position: relative;
     width: auto;
+    overflow: visible;
   }
 }
 .main:before,
@@ -2430,11 +2481,6 @@ body {
 /* background: $black-deep; */
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .site-meta {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
   .site-meta {
     display: none;
   }

@@ -875,6 +875,7 @@ pre .javascript .function {
   position: relative;
 }
 .headband {
+  display: none;
   height: 3px;
   background: #222;
 }
@@ -1526,7 +1527,7 @@ pre .javascript .function {
 }
 .page-post-detail .post-header {
   width: 960px;
-  margin: 80px auto;
+  margin: 80px auto 0;
   color: #fff;
 }
 @media (max-width: 767px) {
@@ -1725,7 +1726,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #660082;
+  background: #062aff;
 }
 .links-of-blogroll {
   font-size: 13px;

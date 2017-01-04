@@ -457,11 +457,6 @@ body {
   padding: 100px 0 70px;
   width: 700px;
 }
-@media (min-width: 1600px) {
-  .container .header-inner {
-    width: 900px;
-  }
-}
 .main {
   padding-bottom: 150px;
 }
@@ -1726,7 +1721,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bb29c6;
+  background: #1b96c3;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2347,11 +2342,6 @@ body {
   overflow: hidden;
   padding: 0;
   width: inherit;
-}
-@media (min-width: 1600px) {
-  .container .header-inner {
-    width: 240px;
-  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .header-inner {

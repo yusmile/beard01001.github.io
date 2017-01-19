@@ -5,14 +5,14 @@
 # Site
 title: 熊D博客
 subtitle: SIMPLE BUT NOT SIMPLE.
-description: 从来都不曾开始，永远也不会结束
+description: 写点东西，看着自己慢慢成长也蛮有趣的。
 author: 熊D01001（BearD01001）
 language: en
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.tail.cc
+url: http://blog.vsv.io
 root: /
 permalink: :category/:title/
 permalink_defaults:
@@ -69,7 +69,7 @@ theme: nextd
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:Beard01001/beard01001.github.io.git
+  repo: git@github.com:BearD01001/beard01001.github.io.git
   branch: master
 
 # 多说评论系统

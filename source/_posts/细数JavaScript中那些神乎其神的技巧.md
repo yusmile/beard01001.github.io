@@ -4,7 +4,7 @@ date: 2016-07-15 15:10:02
 categories: JavaScript
 tags: [JS,JavaScript,技巧]
 ---
-###**闲来无事，整理一下JavaScript中那些神乎其神的技巧，假装大牛的样子**
+**闲来无事，整理一下JavaScript中那些神乎其神的技巧，假装大牛的样子**
 
 ## 1. 字符串转换为数字
 ```
@@ -76,7 +76,7 @@ tags: [JS,JavaScript,技巧]
         console.log(arr[i]);
     }
 
-    // 或者（存在BUG，若数组中键值存在undefined、null、0、false等数据时会中断遍历）
+    // 或者（！注意：若数组中键值存在undefined、null、0、false等数据时会中断遍历）
     for(var i = 0, a; a = arr[i++];) {
         console.log(a);
     }
@@ -125,4 +125,4 @@ tags: [JS,JavaScript,技巧]
         })(i);
     }
 ```
-## 12. `To be continue...`
+## 12. To be continue...

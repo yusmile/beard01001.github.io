@@ -1,6 +1,6 @@
 ---
 title: 前端构建系统Gulp的使用与常用插件推荐
-date: 2017-01-19 17:01:15
+date: 2017-01-19 19:01:15
 subtitle: 玩转 Gulp 前端构建系统，为静态文件添加 MD5 指纹、生成 Source Map、静态文件合并与压缩、自动合并雪碧图、小图标转码为内联 base64、ect.
 categories: JavaScript
 tags: [JS, Gulp, Babel, SourceMap]

@@ -889,7 +889,7 @@ pre .javascript .function {
 }
 .site-home {
   position: relative;
-  top: -10px;
+  top: 0;
   display: inline-block;
   color: #fff;
   font-size: 18px;
@@ -1020,6 +1020,7 @@ pre .javascript .function {
   position: absolute;
   top: 10px;
   left: 10px;
+  opacity: 0;
 }
 @media (max-width: 767px) {
   .site-nav-toggle {
@@ -1171,9 +1172,6 @@ pre .javascript .function {
   transform: rotate(30deg);
 }
 @media (max-width: 767px) {
-  .posts-expand {
-    margin: 0 20px;
-  }
   .post-body pre,
   .post-body .highlight {
     padding: 10px;
@@ -1745,7 +1743,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f1d6f6;
+  background: #ff9e83;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2416,13 +2414,13 @@ a.search-result {
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
     width: 100%;
-    padding: 20px;
+    padding: 1em;
   }
 }
 @media (max-width: 767px) {
   .content-wrap {
     width: 100%;
-    padding: 20px;
+    padding: 1em;
     min-height: auto;
   }
 }

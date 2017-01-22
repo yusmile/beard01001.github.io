@@ -191,7 +191,6 @@ $(document).ready(function () {
       var $title = $('.site-title');
       var $subtitle = $('.site-subtitle');
 
-      // var $sitehome = $('.site-home');
       var $postheader = $('.post-header');
 
       var $logoLineTop = $('.logo-line-before i');
@@ -226,12 +225,6 @@ $(document).ready(function () {
         p: {opacity: 1, top: 0},
         o: {duration: 200}
       });
-
-      // hasElement($sitehome) && sequence.push({
-      //   e: $sitehome,
-      //   p: {opacity: 1, top: 0},
-      //   o: {duration: 200}
-      // });
 
       if (sequence.length > 0) {
         sequence[sequence.length - 1].o.complete = function () {

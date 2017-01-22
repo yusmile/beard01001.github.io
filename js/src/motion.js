@@ -190,6 +190,10 @@ $(document).ready(function () {
       var $brand = $('.brand');
       var $title = $('.site-title');
       var $subtitle = $('.site-subtitle');
+
+      // var $sitehome = $('.site-home');
+      var $postheader = $('.post-header');
+
       var $logoLineTop = $('.logo-line-before i');
       var $logoLineBottom = $('.logo-line-after i');
 
@@ -208,7 +212,7 @@ $(document).ready(function () {
       hasElement($title) && sequence.push({
         e: $title,
         p: {opacity: 1, top: 0},
-        o: { duration: 200 }
+        o: {duration: 200}
       });
 
       hasElement($subtitle) && sequence.push({
@@ -216,6 +220,18 @@ $(document).ready(function () {
         p: {opacity: 1, top: 0},
         o: {duration: 200}
       });
+
+      hasElement($postheader) && sequence.push({
+        e: $postheader,
+        p: {opacity: 1, top: 0},
+        o: {duration: 200}
+      });
+
+      // hasElement($sitehome) && sequence.push({
+      //   e: $sitehome,
+      //   p: {opacity: 1, top: 0},
+      //   o: {duration: 200}
+      // });
 
       if (sequence.length > 0) {
         sequence[sequence.length - 1].o.complete = function () {
@@ -255,7 +271,7 @@ $(document).ready(function () {
     },
 
     menu: function (integrator) {
-      $('.menu-item').velocity('transition.slideDownIn', {
+      $('.menu-item, .site-home').velocity('transition.slideDownIn', {
         display: null,
         duration: 200,
         complete: function () {
